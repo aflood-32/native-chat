@@ -1,0 +1,43 @@
+{
+  "extends": ["eslint-config-airbnb-typescript-prettier"],
+  "plugins": ["react-hooks"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx", ".native.js", ".js", ".jsx"],
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "semi": "error",
+    "@typescript-eslint/no-shadow": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-nested-ternary": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/role-has-required-aria-props": "off",
+    "prefer-promise-reject-errors": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-no-target-blank": "off",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }],
+    "no-underscore-dangle": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "max-len": ["warn", { "code": 200 }],
+    "typescript-eslint/ban-ts-comment": "off",
+    "eslint-disable-next-line react/destructuring-assignment": "off",
+    "no-param-reassign": "off",
+    "import/no-cycle": "off",
+    "camelcase": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-plusplus": "off"
+  }
+}
